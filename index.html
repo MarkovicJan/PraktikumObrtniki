@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Iskanje obrtnikov</title>
-
+    <link rel="stylesheet" type="text/css" href="css.css">
     <style>
         body {font-family: Arial;}
         /* Style the tab */
         .tab {
             overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
+            border: 1px solid #050401;
+            background-color: #edf197;
         }
         /* Style the buttons inside the tab */
         .tab button {
@@ -43,23 +43,31 @@
 </head>
 <body>
 
+<body background="3631436-white-wallpapers.jpg">
+
+<h1 style="color:red" align="center">NAJ OBRTNIK</h1>
 
 <table style="width:100%">
     <tr>
-        <th><a href="/"><img src="gold_books_dorocollection_work.jpg" height=300 width= 500 /></a></th>
-        <th><a href="/prijava"><i class="fa fa-user"></i> PRIJAVA</a></th>
+        <th><a href="/"><img src="gold_books_dorocollection_work.jpg" height=300 width= 400 align="center"/></a></th>
     </tr>
 
 </table>
+
+<p align="right"><a href="/prijava.html" ><i class="fa fa-user" align="right" ></i> PRIJAVA</a></p>
 
 <div class="tab">
     <button class="tablinks" onclick="odpriZavihek(event, 'Obrtniki')">Za obrtnike</button>
     <button class="tablinks" onclick="odpriZavihek(event, 'Iskanje obrtnikov')">Iskanje obrtnikov</button>
     <button class="tablinks" onclick="odpriZavihek(event, 'Pomoč')">Kontakt</button>
+
 </div>
 
-
 <div id="Obrtniki" class="tabcontent">
+    <h3>Vnos novega obrtnika</h3>
+    <p> Za vnos novega obrtnika, prosimo da izpolnite vse pogoje, ki se na našajo na spodnja polja. V primeru, da ni eno polje izpolnjeno,
+        ne boste mogli vnesti obrtnika!</p>
+    <br>
 
     <form action="insert.php" method="post">
 
@@ -71,7 +79,7 @@
         <br></br>
         Lokacija : <input type="text" name="lokacija">
         <br></br>
-        <input type="submit" value="potrdi">
+        <input type="submit" value="Potrdi">
         <br></br>
 
 
@@ -90,11 +98,13 @@
     <p> Kako do nas?</p>
 
     <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EipLb3JvxaFrYSBjZXN0YSA0NiwgMjAwMCBNYXJpYm9yLCBTbG92ZW5pamE&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E" allowfullscreen></iframe>
-    <p> Naš stalen naslov je navoljo na zgornjem zemljevidu.
-        <br><b>Nahajamo se na naslovu Koroška cesta 46, 2000 Maribor.</b></p>
-
+    <p> Naš stalen naslov je navoljo na zgornjem zemljevidu.</p>
+        <br></br>
+    <b>Nahajamo se na naslovu Koroška cesta 46, 2000 Maribor.</b>
     <br></br>
-    <th>24/7 telefonska številka: 080 12 42</th>
+    <th>Naša stalna telefonska številka:
+        <br></br>
+        Skozi 24/7: 080 12 42</th>
 </div>
 
 
