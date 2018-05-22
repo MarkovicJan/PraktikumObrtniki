@@ -35,30 +35,30 @@ body {font-family: Arial;}
 }
 
 .dropbtn {
-background-color: #4CAF50;
+background-color: #af3a36;
 color: white;
-padding: 16px;
-font-size: 16px;
+padding: 20px;
+font-size: 25px;
 border: none;
 cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #ffa7a2;
 }
 
 #myInput {
     border-box: box-sizing;
     background-image: url('searchicon.png');
-    background-position: 14px 12px;
+    background-position: 20px 20px;
     background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
+    font-size: 30px;
+    padding: 20px 20px 12px 45px;
     border: none;
     border-bottom: 1px solid #ddd;
 }
 
-#myInput:focus {outline: 3px solid #ddd;}
+#myInput:focus {outline: 3px solid #edf197;}
 
 .dropdown {
     position: relative;
@@ -68,7 +68,7 @@ cursor: pointer;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
+    background-color: #f6ec9b;
     min-width: 230px;
     overflow: auto;
     border: 1px solid #ddd;
