@@ -1,0 +1,174 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Iskanje obrtnikov</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<body background="3631436-white-wallpapers.jpg">
+
+<h1 style="color:red" align="center">NAJ OBRTNIK</h1>
+
+<table style="width:100%">
+    <tr>
+        <th><a href="/"><img src="gold_books_dorocollection_work.jpg" height=300 width= 400 align="center"/></a></th>
+    </tr>
+
+</table>
+
+<p align="right"><a href="/prijava.html" ><i class="fa fa-user" align="right" ></i> PRIJAVA</a></p>
+
+<div class="tab">
+    <button class="tablinks" onclick="odpriZavihek(event, 'Obrtniki')">Za obrtnike</button>
+    <button class="tablinks" onclick="odpriZavihek(event, 'Iskanje obrtnikov')">Iskanje obrtnikov</button>
+    <button class="tablinks" onclick="odpriZavihek(event, 'Pomoč')">Kontakt</button>
+    <button class="tablinks" onclick="odpriZavihek(event, 'Registracija uporabnika')">Registracija</button>
+
+</div>
+
+<div id="Obrtniki" class="tabcontent">
+    <h3>Vnos novega obrtnika</h3>
+    <p> Za vnos novega obrtnika, prosimo da izpolnite vse pogoje, ki se na našajo na spodnja polja. V primeru, da ni eno polje izpolnjeno,
+        ne boste mogli vnesti obrtnika!</p>
+    <br>
+
+    <form action="insert.php" method="post">
+
+        Naziv : <input type="text" name="username">
+        <br></br>
+        Opis: <input type="text" name="opis">
+        <br></br>
+        Kontakt: <input type="text" name="kontakt">
+        <br></br>
+        Lokacija : <input type="text" name="lokacija">
+        <br></br>
+        <input type="submit" value="Potrdi">
+        <br></br>
+
+
+
+    </form>
+</div>
+
+<div id="Iskanje obrtnikov" class="tabcontent">
+    <h2>Iskanje obrtnikov</h2>
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Kategorije</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Iskanje" id="myInput" onkeyup="filterFunction()">
+            <a href="elektroinstalacije.html">Elektoinštalacije</a>
+            <a href="kamnosestvo.html">Kamnoseštvo</a>
+            <a href="racunovodske.html">Računovodske storitve</a>
+            <a href="informacijski.html">Informacijski inžerining</a>
+            <a href="#Lesarstvo">Lesarstvo</a>
+            <a href="#dimnikarstvo">Dimnikarstvo</a>
+            <a href="#avto">Avtomehanikarstvo</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<div id="Registracija uporabnika" class="tabcontent">
+    <h2>Registracija uporabnika</h2>
+
+    <form method="post" action="register.php">
+        <?php include('errors.php'); ?>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" value="<?php echo $username; ?>">
+        </div>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" value="<?php echo $email; ?>">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password_1">
+        </div>
+        <div class="input-group">
+            <label>Confirm password</label>
+            <input type="password" name="password_2">
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn" name="reg_user">Register</button>
+        </div>
+        <p>
+            Already a member? <a href="login.php">Sign in</a>
+        </p>
+    </form>
+
+
+</div>
+
+
+
+
+<div id="Pomoč" class="tabcontent">
+    <p> Dosegljivi smo od ponedeljka do sobote!</p>
+    <br></br>
+    <p> Kako do nas?</p>
+
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EipLb3JvxaFrYSBjZXN0YSA0NiwgMjAwMCBNYXJpYm9yLCBTbG92ZW5pamE&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E" allowfullscreen></iframe>
+    <p> Naš stalen naslov je navoljo na zgornjem zemljevidu.</p>
+    <br></br>
+    <b>Nahajamo se na naslovu Koroška cesta 46, 2000 Maribor.</b>
+    <br></br>
+    <th>Naša stalna telefonska številka:
+        <br></br>
+        Skozi 24/7: 080 12 42</th>
+</div>
+
+
+
+<script>
+    function odpriZavihek(evt, zavihek) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(zavihek).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+</body>
+</html>
