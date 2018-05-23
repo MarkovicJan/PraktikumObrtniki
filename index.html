@@ -38,32 +38,29 @@
 
 <table style="width:100%">
     <tr>
-        <th><a href="/"><img src="gold_books_dorocollection_work.jpg" height=250 width= 350 align="center"/></a></th>
+        <th><a href="/"><img src="gold_books_dorocollection_work.jpg" height=300 width= 400 align="center"/></a></th>
     </tr>
 
 </table>
 
-
-
-<p> Naj obrtnik je spletna stran, na kateri lahko tako rekoč najdete vse za vaš dom.
-    <br>Skoraj pozabljeni poklici so nam v veliko veselje,
-    da vam jih predstavimo. Po ugodnih cenah, smo na naši spletni strani vse obrtnike zložili po kategorijah, kot si se seveda to zaslužijo.</p>
-
-<p align="left"><a href="prijava.html" ><i class="fa fa-user" align="right" ></i> PRIJAVA</a></p>
-<p align="left"><a href="index.html">DOMOV</a> </p>
+<p align="right"><a href="/prijava.html" ><i class="fa fa-user" align="right" ></i> PRIJAVA</a></p>
 
 <div class="tab">
-
     <button class="tablinks" onclick="odpriZavihek(event, 'Obrtniki')">Za obrtnike</button>
     <button class="tablinks" onclick="odpriZavihek(event, 'Iskanje obrtnikov')">Iskanje obrtnikov</button>
     <button class="tablinks" onclick="odpriZavihek(event, 'Pomoč')">Kontakt</button>
     <button class="tablinks" onclick="odpriZavihek(event, 'Registracija uporabnika')">Registracija</button>
+
 </div>
+
 <div id="Obrtniki" class="tabcontent">
     <h3>Vnos novega obrtnika</h3>
-    <p> Za vnos novega obrtnika, prosimo da izpolnite vse pogoje, ki se na našajo na spodnja polja.</p>
+    <p> Za vnos novega obrtnika, prosimo da izpolnite vse pogoje, ki se na našajo na spodnja polja. V primeru, da ni eno polje izpolnjeno,
+        ne boste mogli vnesti obrtnika!</p>
     <br>
+
     <form action="insert.php" method="post">
+
         Naziv : <input type="text" name="username">
         <br></br>
         Opis: <input type="text" name="opis">
@@ -74,34 +71,44 @@
         <br></br>
         <input type="submit" value="Potrdi">
         <br></br>
+
+
+
     </form>
 </div>
 
 <div id="Iskanje obrtnikov" class="tabcontent">
     <h2>Iskanje obrtnikov</h2>
+
+
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Kategorije</button>
         <div id="myDropdown" class="dropdown-content">
             <input type="text" placeholder="Iskanje" id="myInput" onkeyup="filterFunction()">
-            <a href="elektroInstalacija.html">Elektoinštalacije</a>
+            <a href="elektroinstalacije.html">Elektoinštalacije</a>
             <a href="kamnosestvo.html">Kamnoseštvo</a>
-            <a href="#racunovodskeStoritve.html">Računovodske storitve</a>
-            <a href="#Informacijski inžerining">Informacijski inžerining</a>
+            <a href="urarstvo.html">Urarstvo</a>
+            <a href="racunovodske.html">Računovodske storitve</a>
+            <a href="informacijski.html">Informacijski inžerining</a>
             <a href="#Lesarstvo">Lesarstvo</a>
             <a href="#dimnikarstvo">Dimnikarstvo</a>
             <a href="#avto">Avtomehanikarstvo</a>
         </div>
     </div>
+
+
 </div>
+
 
 
 
 <div id="Registracija uporabnika" class="tabcontent">
     <h2>Registracija uporabnika</h2>
+
     <form method="post" action="register.php">
         <?php include('errors.php'); ?>
         <div class="input-group">
-            <label>Uporabniško ime</label>
+            <label>Username</label>
             <input type="text" name="username" value="<?php echo $username; ?>">
         </div>
         <div class="input-group">
@@ -109,18 +116,18 @@
             <input type="email" name="email" value="<?php echo $email; ?>">
         </div>
         <div class="input-group">
-            <label>Geslo</label>
+            <label>Password</label>
             <input type="password" name="password_1">
         </div>
         <div class="input-group">
-            <label>Potrdite geslo</label>
+            <label>Confirm password</label>
             <input type="password" name="password_2">
         </div>
         <div class="input-group">
-            <button type="submit" class="btn" name="reg_user">Registracija</button>
+            <button type="submit" class="btn" name="reg_user">Register</button>
         </div>
         <p>
-            Ste že član? Potem pa se hitro prijavite! <a href="login.php">Prijava</a>
+            Already a member? <a href="login.php">Sign in</a>
         </p>
     </form>
 
@@ -146,6 +153,7 @@
 </div>
 
 
+
 <script>
     function odpriZavihek(evt, zavihek) {
         var i, tabcontent, tablinks;
@@ -164,5 +172,4 @@
 
 
 </body>
-
 </html>
