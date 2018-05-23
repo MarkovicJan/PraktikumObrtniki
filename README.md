@@ -14,10 +14,21 @@ Avtorji:
 Seznam datotek:
 =========
 ```
-test
+Baze + slika baze
 
-test2
+koda za izgled strani (css.css)
+
+glavna stran (index.html)
+
+insert stavki (insert.php)
+
+server (server.php)
+
+struktura tabel (struktura tabel + slika)
+
 ```
+
+
 Navodila uporabe
 =======
 To je paragraf navodil
