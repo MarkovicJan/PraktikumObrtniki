@@ -1,39 +1,64 @@
 # PraktikumObrtniki
-Kratek opis projekta
 
-Avtorji:
-=======
-*Monika Petek*
 
-*Tajda Kolar*
 
-*Jan Markovič*
 
-*Damijan Vogrinec*
+## Začetek
+Projekt, ki omogoča iskanje in vnos obrtnikov v sistem. Ti so potem na voljo za ogled, ocenjevanje,komentiranje in kontaktiranje.
 
-Seznam datotek:
-=========
-```
-Baze + slika baze
+V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projekta in tudi uspešnega upravljanja.
 
-koda za izgled strani (css.css)
+### Zahteve
 
-glavna stran (index.html)
-
-insert stavki (insert.php)
-
-server (server.php)
-
-struktura tabel (struktura tabel + slika)
+Kaj vse se potrebuje
 
 ```
+Primer
+```
+
+### Upravljanje
 
 
-Navodila uporabe
-=======
+
+Korak 1
+
+```
+postopek
+```
+
+Korak 2
+
+```
+do konca pač
+```
+
+Mogoče slika ali pa nekaj
 
 
-Bugs in popravki
-=======
 
-pozneje odstraniti obrtniki.html
+
+
+## Ustvarjeno s pomočjo:
+
+* Xaamp
+* MySQL
+* Notepad++
+
+
+
+
+## Authors
+
+* **Monika Petek** 
+
+* **Tajda Kolar**
+
+* **Jan Markovič**
+
+* **Damijan Vogrinec**
+
+
+## Bugs in popravki
+
+* Izbris obrtniki.html
+* Še neznani
