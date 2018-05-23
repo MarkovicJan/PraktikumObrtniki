@@ -10,20 +10,24 @@ V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projek
 
 ### Zahteve
 
-Kaj vse se potrebuje
+Kaj vse se potrebuje za izvedbo:
 
 ```
-Primer
+- server (lokalen)
+
+- baza (koraki v nadaljevanju)
+
+- vnosi podatkov
 ```
 
 ### Upravljanje
 
 
 
-Korak 1
+Korak 1: Postavitev lokalnega strežnika
 
 ```
-postopek
+Za začetek dela si morate najprej postaviti lokalen server. Pri tem lahko uporabite različne serverje (UwAmp,XAMPP). S pomočjo programa zaženite povezavo apache in mysql. Bazo na katero se želite povezati ima naslov  
 ```
 
 Korak 2
