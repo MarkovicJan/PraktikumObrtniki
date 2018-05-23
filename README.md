@@ -13,11 +13,14 @@ V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projek
 Kaj vse se potrebuje za izvedbo:
 
 ```
+- PraktikumObrtniki celoten file (download ali clone na namizje)
+
 - server (lokalen)
 
 - baza (koraki v nadaljevanju)
 
 - vnosi podatkov
+
 ```
 
 ### Upravljanje
@@ -27,20 +30,32 @@ Kaj vse se potrebuje za izvedbo:
 Korak 1: Postavitev lokalnega strežnika
 
 ```
-Za začetek dela si morate najprej postaviti lokalen server. Pri tem lahko uporabite različne serverje (UwAmp,XAMPP). S pomočjo programa zaženite povezavo apache in mysql. Bazo na katero se želite povezati ima naslov  
+Za začetek dela si morate najprej postaviti lokalen server. 
+
+Pri tem lahko uporabite različne serverje (UwAmp,XAMPP). 
+
+S pomočjo programa zaženite povezavo apache in mysql. Sedaj, ko imate delujočo povezavo, s pritiskom na mySQL admin lahko začnete ustvarjati svojo bazo. 
 ```
 
-Korak 2
+Korak 2: Ustvarjanje baze
 
 ```
-do konca pač
+Za vnos katerikolih podatkov si morate najprej ustvariti tabelo. 
+
+Tabelo morate poimenovati obrtniki in stolpci ter imena stolpcev so naj skladni s sliko:
 ```
 
-Mogoče slika ali pa nekaj
+![alt text](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/bazeObrtniki.png)
 
 
+Korak 3: Vnos podatkov
 
+```
+Tukaj si lahko ogledate primer vnosa tabele:
 
+```
+
+![alt text](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/struktura%20tabel.png)
 
 ## Ustvarjeno s pomočjo:
 
