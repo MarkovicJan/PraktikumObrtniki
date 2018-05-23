@@ -31,8 +31,9 @@ struktura tabel (struktura tabel + slika)
 
 Navodila uporabe
 =======
-To je paragraf navodil
 
-Bugs
+
+Bugs in popravki
 =======
-Trenutno nič
+
+pozneje odstraniti obrtniki.html
