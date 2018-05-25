@@ -10,7 +10,7 @@ V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projek
 
 ## Kazalo vsebine
 
-[Zahteve]()
+[Zahteve](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/README.md/Zahteve)
 
 [Upravljanje]()
 
