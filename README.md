@@ -8,6 +8,14 @@ Projekt, ki omogoča iskanje in vnos obrtnikov v sistem. Ti so potem na voljo za
 
 V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projekta in tudi uspešnega upravljanja.
 
+## Kazalo vsebine
+
+[Zahteve]()
+
+[Upravljanje]()
+
+[Avtorji]()
+
 ### Zahteve
 
 Kaj vse se potrebuje za izvedbo:
@@ -66,7 +74,7 @@ Tukaj si lahko ogledate primer vnosa tabele:
 
 
 
-## Authors
+## Avtorji
 
 * **Monika Petek** 
 
