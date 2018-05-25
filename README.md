@@ -12,9 +12,9 @@ V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projek
 
 [Zahteve](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/README.md#zahteve)
 
-[Upravljanje](Upravljanje)
+[Upravljanje](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/README.md#Upravljanje)
 
-[Avtorji](Avtorji)
+[Avtorji](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/README.md#Avtorji)
 
 ### Zahteve
 
