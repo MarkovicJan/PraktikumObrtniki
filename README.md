@@ -10,11 +10,11 @@ V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projek
 
 ## Kazalo vsebine
 
-[Zahteve]()
+[Zahteve](Zahteve)
 
-[Upravljanje]()
+[Upravljanje](Upravljanje)
 
-[Avtorji]()
+[Avtorji](Avtorji)
 
 ### Zahteve
 
