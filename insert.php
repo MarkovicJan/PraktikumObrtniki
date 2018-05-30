@@ -19,8 +19,9 @@ $Naziv = $_POST['username'];
 $Opis = $_POST['opis'];
 $Kontakt = $_POST ['kontakt'];
 $Lokacija = $_POST ['lokacija'];
+$Kategorija = $_POST ['kategorija'];
 
-$sql = "INSERT INTO obrtniki (Naziv, Opis, Kontakt, Lokacija) VALUES ('$Naziv','$Opis', '$Kontakt', '$Lokacija')";
+$sql = "INSERT INTO obrtniki (Naziv, Opis, Kontakt, Lokacija) VALUES ('$Naziv','$Opis', '$Kontakt', '$Lokacija', '$Kategorija')";
 
 
 if (!mysqli_query($con,$sql))
@@ -33,7 +34,7 @@ else
 }
 
 
-header('refresh:2; url=index.html');
+header('refresh:2; url=index.php');
 
 ?>
 
