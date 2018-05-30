@@ -21,7 +21,7 @@ $Kontakt = $_POST ['kontakt'];
 $Lokacija = $_POST ['lokacija'];
 $Kategorija = $_POST ['kategorija'];
 
-$sql = "INSERT INTO obrtniki (Naziv, Opis, Kontakt, Lokacija) VALUES ('$Naziv','$Opis', '$Kontakt', '$Lokacija', '$Kategorija')";
+$sql = "INSERT INTO obrtniki (Naziv, Opis, Kontakt, Lokacija, Kategorija) VALUES ('$Naziv','$Opis', '$Kontakt', '$Lokacija', '$Kategorija')";
 
 
 if (!mysqli_query($con,$sql))
