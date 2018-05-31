@@ -80,13 +80,12 @@
 	
 	
 	
-	<form name="form1" method="post" action="searchresults.php">
-	<input name="query" type="text" size="40" maxlength="50" />
-	<input type="submit" name="Submit" value="Search" />
+	<form action="search.php" method="POST">
+	<input type="text" name="search" placeholder="Search" />
+	<button type="submit" name="submit-search" value="Search">Search</button>
 	</form>
-	
-	
-	
+
+
 	
     <ul>
         <div class="dropdown">
