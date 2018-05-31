@@ -1,4 +1,6 @@
-<?php include('server.php') ?>
+<?php
+    include_once 'connect.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -124,6 +126,21 @@
     </div>
 
 <div id="kamnosestvo" class="tabcontent">
+
+    <?php
+
+
+        $sql = "SELECT * FROM obrtniki;";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+
+        if($resultCheck > 0 ){
+            while ($row = mysqli_fetch_assoc($result)){
+                echo $row['Naziv'];
+            }
+        }
+    ?>
+
 
 
 
