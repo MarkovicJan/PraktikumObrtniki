@@ -86,57 +86,160 @@
             <button class="tablinks" onclick="odpriZavihek(event, 'racunovodskeStoritve')">Računovodske storitve</button>
             <button class="tablinks" onclick="odpriZavihek(event, 'informacijski')">Informacijski inženiring</button>
             <button class="tablinks" onclick="odpriZavihek(event, 'Lesarstvo')">Lesarstvo</button>
-            <button class="tablinks" onclick="odpriZavihek(event, 'Lesarstvo')">Dimnikarstvo</button>
-            <button class="tablinks" onclick="odpriZavihek(event, 'Lesarstvo')">Avtomehanikarstvo</button>
+            <button class="tablinks" onclick="odpriZavihek(event, 'dimnikarstvo')">Dimnikarstvo</button>
+            <button class="tablinks" onclick="odpriZavihek(event, 'avtomehanika')">Avtomehanika</button>
     </ul>
 </div>
 </div>
 
+<div id="racunovodskeStoritve" class="tabcontent">
+
+    <?php
+
+
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Racunovodske storitve';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    if($resultCheck > 0 ){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
+        }
+    }
+    ?>
+
+
+
+</div>
+
+<div id="informacijski" class="tabcontent">
+
+
+    <?php
+
+
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Informacijski inženiring';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    if($resultCheck > 0 ){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
+        }
+    }
+    ?>
+
+
+
+</div>
+
+<div id="dimnikarstvo" class="tabcontent">
+
+
+    <?php
+
+
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Dimnikarstvo';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    if($resultCheck > 0 ){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
+        }
+    }
+    ?>
+
+
+</div>
+
+<div id="avtomehanika" class="tabcontent">
+
+
+    <?php
+
+
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Avtomehanika';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    if($resultCheck > 0 ){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
+        }
+    }
+    ?>
+
+
+</div>
+
+
 <div id="elektroInstalacije" class="tabcontent">
 
-    <h2>Elektroinštalcije Global elektrik</h2>
-    <p>Opis:
-        Smo mlado podjetje, specializirano za izvajanje tehničnih storitev s področja elektro inštalacij in strelovodnih naprav.<br>
-        Nudimo celostno obravnavo elektro inštalacij od projektiranja do izvedbe ali montaže in nadzora.   <br>
-        Direktor podjetja ima številna specializirana znanja s področja električnih inštalacij, energetike in telekomunikacij ter strelovodnih
-        inštalacij za individualne gradnje.</p>
-
-    <b>Kontakt:info@global-elektrik.si,
-        <br>040 232 112</b><br>
-    <b>Pločanska ulica 22, 1211 Ljubljana</b><br>
-    <iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=plo%C4%8Danska%20ulica%2022&key=AIzaSyCeY_lHw2RzeelYgyt6P8x6qj_sE8UYOLo" allowfullscreen></iframe>
+    <?php
 
 
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Elektroinštalacije';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
 
-        <h2>Elektroinštalacije Huzjak</h2>
-        <p>Opis:
-            Elektroinštalacije Huzjak je podjetje, ki se ukvarja s prodajno in storitveno dejavnostjo. <br>
-            V okviru prodajne dejavnosti se osredotoča na ponudbo širokega in zanimivega spektra znamk elektronskih pripomočkov srednje in višje vrednosti, <br>
-            kakor tudi širokega nabora kablov. Poleg tega ponuja tudi spominske kartice. V okviru storitvene dejavnosti se ukvarjamo s popravilom in <br>
-            servisiranjem električnih pripomočkov vseh vrst in znamk. Tako se opravljajo zahtevnejša in manj zahtevna popravila<br>
-            različnih elektronike.</p>
+    if($resultCheck > 0 ){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
+        }
+    }
+    ?>
 
-
-        <b>Kontakt: elektro.huzjak@gmail.com,
-            <br>telefonska številka: 070 665 556</b><br>
-        <b>Kocljeva ulica 1a, 9000 Murska Sobota</b><br>
-        <iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=kocljeva%20ulica%201a&key=AIzaSyCeY_lHw2RzeelYgyt6P8x6qj_sE8UYOLo" allowfullscreen></iframe>
-
-
-    </div>
+</div>
 
 <div id="kamnosestvo" class="tabcontent">
 
     <?php
 
 
-        $sql = "SELECT * FROM obrtniki;";
+        $sql = "SELECT * FROM obrtniki WHERE kategorija='Kamnoseštvo';";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 
         if($resultCheck > 0 ){
             while ($row = mysqli_fetch_assoc($result)){
-                echo $row['Naziv'];
+                echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
             }
         }
     ?>
@@ -147,52 +250,26 @@
 </div>
 
 <div id="Lesarstvo" class="tabcontent">
-    <h2> Lesarstvo Lesi d.o.o</h2>
-    <p>Opis:
-        Smo proizvajalci vsestranski lesnih produktov.<br> Naši najbolj priljeblju izdelki
-        so po naročilu delani stoli in mize. Odlikuje nas hitra ozivnost in oseben odnos s strankami.
 
-        <br>Izdelujemo lahko tudi po naročilu. <br>Drži se nas sloves dobrega znanja z lesom. <br>
-        Ponujamo storitve kot so:
-    <li style="color: orangered"><b>Mizarstvo</b></li><br>
-    <li style="color: orangered"><b>Izdelava ročnih izdelkov iz lesa</b></li><br>
-    <li style="color: orangered"><b>Priprava lesa za zimo</b></li><br>
-    <li style="color: orangered"><b>Pomaganje pri zlaganju lesa</b></li>
-
-    </p>
-
-    <br>
-    <p>Kontakt ter lokacija
-        <br>Spodaj nas lahko najdete na lokaciji
-        <br>
-        <b>Telefonska številka: 041 231 223</b></p>
-    <iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAzvWgdl7b0cRDHdkitYJ5zc&key=AIzaSyCeY_lHw2RzeelYgyt6P8x6qj_sE8UYOLo" allowfullscreen></iframe>
+    <?php
 
 
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Lesarstvo';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
 
-    <h2> Lesarstvo Woody</h2>
-    <p>Opis:
-        Predelava lesa ter uporaba lesnik izdelkov, je za znižanje emisije toplogrednih plinov <br>
-        bistvena in lahko v največji možni meri prispeva k normalizaciji podneba. <br>
-        Za prihodnost in obstanek človeštva bo les nedvomno odločilen material 21.stoletja. <br>
-        Zato izberite pravilno - IZBERITE NAS!
-
-        <br>Izdelujemo lahko tudi po naročilu. <br>
-        Ponujamo storitve kot so:<br>
-    <li style="color: orangered"><b>Mizarstvo</b></li><br>
-    <li style="color: orangered"><b>Izdelava lesa po merilu</b></li><br>
-    <li style="color: orangered"><b>Naročanje lesa za zimo</b></li><br>
-    <li style="color: orangered"><b>Pomaganje pri gradnji</b></li>
-
-    </p>
-
-    <br>
-    <p>Kontakt in lokacija
-        <br>Spodaj nas lahko najdete na lokaciji
-        <br>
-        <b>Telefonska številka: 050 232 123</b><br>
-        <iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL0BywsdvZUcRQ2YKFyp_Utw&key=AIzaSyCeY_lHw2RzeelYgyt6P8x6qj_sE8UYOLo" allowfullscreen></iframe>
-
+    if($resultCheck > 0 ){
+        while ($row = mysqli_fetch_assoc($result)){
+            echo
+                "<div>
+                <h2>".$row['Naziv']."</h2>
+                <p>".$row['Opis']."</p>
+                <p>".$row['Kontakt']."</p>
+                <p>".$row['Lokacija']."</p>
+                </div>";
+        }
+    }
+    ?>
 
 </div>
 
@@ -200,6 +277,7 @@
 
 
 <div id="Registracija uporabnika" class="tabcontent">
+
     <h2>Registracija uporabnika</h2>
     <form method="post" action="register.php">
         <?php include('errors.php'); ?>
