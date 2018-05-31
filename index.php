@@ -55,7 +55,17 @@
         <br></br>
         Lokacija : <input type="text" name="lokacija">
         <br></br>
-        Kategorija : <input type="text" name="kategorija">
+        Kategorija :
+        <select name="kategorija">
+            <option value="Elektroinštalacije">Elektroinštalacije</option>
+            <option value="Kamnoseštvo">Kamnoseštvo</option>
+            <option value="Računovodske storitve">Računovodske storitve</option>
+            <option value="Informacijski inženiring">Informacijski inženiring</option>
+            <option value="Lesarstvo">Lesarstvo</option>
+            <option value="Dimnikarstvo">Dimnikarstvo</option>
+            <option value="Avtomehanika">Avtomehanika</option>
+
+        </select>
         <br></br>
         <input type="submit" value="Potrdi">
         <br></br>
