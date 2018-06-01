@@ -106,7 +106,7 @@
     <?php
 
 
-    $sql = "SELECT * FROM obrtniki WHERE kategorija='Racunovodske storitve';";
+    $sql = "SELECT * FROM obrtniki WHERE kategorija='Računovodske storitve';";
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
 
