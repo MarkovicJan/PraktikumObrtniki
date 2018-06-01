@@ -87,5 +87,6 @@ Tukaj si lahko ogledate primer vnosa tabele:
 
 ## Bugs in popravki
 
-* Izbris obrtniki.html
+* Izbris nekaterih html files
+* Izbira Bootstrap teme
 * Še neznani
