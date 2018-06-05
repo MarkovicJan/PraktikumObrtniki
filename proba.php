@@ -3,20 +3,16 @@ include_once 'connect.php';
 ?>
 
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Obrtniki</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/ie/html5shiv.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -24,7 +20,9 @@ include_once 'connect.php';
 			<div id="header">
 
 
+
 				<div class="top">
+
 
 					<!-- Logo -->
 						<div id="logo">
@@ -35,14 +33,10 @@ include_once 'connect.php';
 
 					<!-- Nav -->
 						<nav id="nav">
-
-							<ul>
-
-                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Obrtniki')"><span class="icon fa-home">Obrtniki</span></button></li>
-                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'iskanjeObrtnikov')"><span class="icon fa-th">Iskanje obrtnika</span></button></li>
-                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Registracija')"><span class="icon fa-user">Registracija</span></button></li>
-                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Kontakt')"><span class="icon fa-envelope">Kontakt</span></li></button>
-							</ul>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Obrtniki')"><span class="icon fa-home">Obrtniki</span></button></li>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'iskanjeObrtnikov')"><span class="icon fa-th">Iskanje obrtnika</span></button></li>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Registracija')"><span class="icon fa-user">Registracija</span></button></li>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Kontakt')"><span class="icon fa-envelope">Kontakt</span></li></button>
 						</nav>
 
 				</div>
@@ -52,12 +46,13 @@ include_once 'connect.php';
 		<!-- Main -->
 			<div id="main">
 
+
 				<!-- Intro -->
-					<section id="uvod" class="one dark cover">
+					<section id="Obrtniki" class="one dark cover">
 						<div class="container">
 
 							<header>
-                                <h2 class="alt" style="color: #9ececc">Naj obrtnik je spletna stran, na kateri lahko tako rekoč najdete vse za vaš dom.</h2>
+                                <h2>Naj obrtnik je spletna stran, na kateri lahko tako rekoč najdete vse za vaš dom.</h2>
                                 <br>Skoraj pozabljeni poklici so nam v veliko veselje,
                                 da vam jih predstavimo. Po ugodnih cenah, smo na naši spletni strani vse obrtnike zložili po kategorijah, kot si se seveda to zaslužijo.</h2>
 
@@ -66,9 +61,10 @@ include_once 'connect.php';
 
 
 						</div>
+
 					</section>
 
-                <div id="Obrtniki" class="tabcontent">
+                <section id="Obrtniki" class="tabcontent">
                     <h3>Vnos novega obrtnika</h3>
                     <p> Za vnos novega obrtnika, prosimo da izpolnite vse pogoje, ki se na našajo na spodnja polja.</p>
                     <br>
@@ -97,10 +93,10 @@ include_once 'connect.php';
 
                         <br>
                     </form>
-                </div>
+                </section>
 
 
-                <div id="iskanjeObrtnikov" class="tabcontent">
+                <section id="iskanjeObrtnikov" class="tabcontent">
                     <h2 style="color: red;">Kategorije</h2>
 
 
@@ -110,8 +106,9 @@ include_once 'connect.php';
                         <button type="submit" name="submit-search" value="Search">Search</button>
                     </form>
 
+                </section>
 
-<br>
+
                     <ul>
                         <div class="dropdown">
 
@@ -122,8 +119,9 @@ include_once 'connect.php';
                             <button class="tablinks" onclick="odpriZavihek(event, 'Lesarstvo')">Lesarstvo</button>
                             <button class="tablinks" onclick="odpriZavihek(event, 'dimnikarstvo')">Dimnikarstvo</button>
                             <button class="tablinks" onclick="odpriZavihek(event, 'avtomehanika')">Avtomehanika</button>
+                        </div>
                     </ul>
-                </div>
+
 
 
                 <div id="racunovodskeStoritve" class="tabcontent">
@@ -317,7 +315,7 @@ include_once 'connect.php';
                         </p>
                     </form>
 
-<br>
+
                 </div>
 
                 <!-- Contact -->
