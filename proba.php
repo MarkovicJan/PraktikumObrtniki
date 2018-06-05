@@ -38,10 +38,10 @@ include_once 'connect.php';
 
 							<ul>
 
-								<li><a href="#obrtniki" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Obrtniki</span></a></li>
-								<li><a href="#iskanjeObrtnikov" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Iskanje obrtnika</span></a></li>
-								<li><a href="#registracija" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Registracija</span></a></li>
-								<li><a href="#kontakt" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Kontakt</span></a></li>
+                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Obrtniki')"><span class="icon fa-home">Obrtniki</span></button></li>
+                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'iskanjeObrtnikov')"><span class="icon fa-th">Iskanje obrtnika</span></button></li>
+                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Registracija')"><span class="icon fa-user">Registracija</span></button></li>
+                                <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Kontakt')"><span class="icon fa-envelope">Kontakt</span></li></button>
 							</ul>
 						</nav>
 
@@ -68,7 +68,7 @@ include_once 'connect.php';
 						</div>
 					</section>
 
-                <div id="obrtniki" class="tabcontent">
+                <div id="Obrtniki" class="tabcontent">
                     <h3>Vnos novega obrtnika</h3>
                     <p> Za vnos novega obrtnika, prosimo da izpolnite vse pogoje, ki se na našajo na spodnja polja.</p>
                     <br>
@@ -124,7 +124,8 @@ include_once 'connect.php';
                             <button class="tablinks" onclick="odpriZavihek(event, 'avtomehanika')">Avtomehanika</button>
                     </ul>
                 </div>
-           
+
+
                 <div id="racunovodskeStoritve" class="tabcontent">
 
     <?php
@@ -287,7 +288,7 @@ include_once 'connect.php';
 
 
                 <!-- About Me -->
-                <div id="registracija" class="tabcontent">
+                <div id="Registracija" class="tabcontent">
 
                     <h2>Registracija uporabnika</h2>
                     <form method="post" action="register.php">
@@ -320,7 +321,7 @@ include_once 'connect.php';
                 </div>
 
                 <!-- Contact -->
-                <div id="kontakt" class="tabcontent">
+                <div id="Kontakt" class="tabcontent">
 
                     <h2>Kontakt</h2>
                     <p> Dosegljivi smo od ponedeljka do sobote!</p>
