@@ -1,0 +1,11 @@
+xampp/sendmail/sendmail.ini
+odkomentiraj,spremeni line sendmail_path = " mestoapacheja\sendmail\sendmail.exe -t"
+
+
+xampp php.ini
+smtp_server=smtp.gmail.com
+smtp_port=465
+auth_username= vnesi email
+auth_password= vnesi geslo
+
+v gmail vklopi v nastavitvah da non-secure aplikacije lahko uporabljajo mail
