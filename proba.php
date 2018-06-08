@@ -33,7 +33,8 @@ include_once 'connect.php';
 
 					<!-- Nav -->
 						<nav id="nav">
-                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Obrtniki')"><span class="icon fa-home">Obrtniki</span></button></li>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'domov')"><span class="icon fa-home">Domov</span></button> </li>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Obrtniki')">Obrtniki</></button></li>
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'iskanjeObrtnikov')"><span class="icon fa-th">Iskanje obrtnika</span></button></li>
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Registracija')"><span class="icon fa-user">Registracija</span></button></li>
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Kontakt')"><span class="icon fa-envelope">Kontakt</span></li></button>
@@ -48,7 +49,7 @@ include_once 'connect.php';
 
 
 				<!-- Intro -->
-					<section id="Obrtniki" class="one dark cover">
+					<section id="domov" class="one dark cover">
 						<div class="container">
 
 							<header>
@@ -59,10 +60,10 @@ include_once 'connect.php';
 							</header>
 
 
-
 						</div>
 
 					</section>
+
 
                 <section id="Obrtniki" class="tabcontent">
                     <h3>Vnos novega obrtnika</h3>
@@ -106,8 +107,6 @@ include_once 'connect.php';
                         <button type="submit" name="submit-search" value="Search">Search</button>
                     </form>
 
-                </section>
-
 
                     <ul>
                         <div class="dropdown">
@@ -121,7 +120,7 @@ include_once 'connect.php';
                             <button class="tablinks" onclick="odpriZavihek(event, 'avtomehanika')">Avtomehanika</button>
                         </div>
                     </ul>
-
+            </section>
 
 
                 <div id="racunovodskeStoritve" class="tabcontent">
