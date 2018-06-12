@@ -67,9 +67,10 @@ Tukaj si lahko ogledate primer vnosa tabele:
 
 ## Ustvarjeno s pomočjo:
 
-* Xaamp
+* XAMPP
 * MySQL
 * Notepad++
+* PhpStorm
 
 
 
