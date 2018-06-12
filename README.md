@@ -6,7 +6,7 @@
 ## Začetek
 Projekt, ki omogoča iskanje in vnos obrtnikov v sistem. Ti so potem na voljo za ogled, ocenjevanje,komentiranje in kontaktiranje.
 
-V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projekta in tudi uspešnega upravljanja.
+V nadaljevanju Vas bodo navodila po korakih vodila do pravilne nastavitve projekta in tudi uspešnega uporabljanja.
 
 ## Kazalo vsebine
 
@@ -25,9 +25,7 @@ Kaj vse se potrebuje za izvedbo:
 
 - server (lokalen)
 
-- baza (koraki v nadaljevanju)
-
-- vnosi podatkov
+- internetna povezava
 
 ```
 
@@ -35,35 +33,31 @@ Kaj vse se potrebuje za izvedbo:
 
 
 
-Korak 1: Postavitev lokalnega strežnika
+Korak 1: Celoten projekt (in vsa njegova vsebina) se nahaja na Github-u, tako da je potreben samo download.
 
 ```
 Za začetek dela si morate najprej postaviti lokalen server. 
 
 Pri tem lahko uporabite različne serverje (UwAmp,XAMPP). 
 
-S pomočjo programa zaženite povezavo apache in mysql. Sedaj, ko imate delujočo povezavo, s pritiskom na mySQL admin lahko začnete ustvarjati svojo bazo. 
+S pomočjo programa zaženite povezavo apache in mysql. Sedaj lahko zaženemo projekt. 
 ```
 
-Korak 2: Ustvarjanje baze
+Korak 2: Upravljanje strani/Vnos obrtnikov
 
 ```
-Za vnos katerikolih podatkov si morate najprej ustvariti tabelo. 
-
-Tabelo morate poimenovati obrtniki in stolpci ter imena stolpcev so naj skladni s sliko:
-```
-
-![alt text](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/bazeObrtniki.png)
+V primeru, da želimo dodati obrtnika, lahko ga enostavno vnesemo in vnos shranimo. Obrtnik je tako shranjen in viden vsem. 
 
 
-Korak 3: Vnos podatkov
+
+Korak 3: Upravlanje strani/Iskanje obrtnikov
 
 ```
-Tukaj si lahko ogledate primer vnosa tabele:
+Iskanje obrtnikov je narejeno tako, da išče ključne besede iskalne vrstice. Za bolj splošno iskanje lahko izberemo samo kategorijo obrtnika in nam tako pokaže vse obrtnike, ki so označene kategorije. 
 
 ```
 
-![alt text](https://github.com/MarkovicJan/PraktikumObrtniki/blob/master/struktura%20tabel.png)
+
 
 ## Ustvarjeno s pomočjo:
 
@@ -86,8 +80,8 @@ Tukaj si lahko ogledate primer vnosa tabele:
 * **Damijan Vogrinec**
 
 
-## Bugs in popravki
+## Bugs in izboljški
 
-* Izbris nekaterih html files
-* Izbira Bootstrap teme
+* Izbris nepotrebnih datotek
+* Polepšanje strani
 * Še neznani
