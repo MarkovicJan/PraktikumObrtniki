@@ -37,6 +37,7 @@ include_once 'connect.php';
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Obrtniki')"><span class="icon fa-book">Obrtniki</span></button></li>
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'iskanjeObrtnikov')"><span class="icon fa-th">Iskanje obrtnika</span></button></li>
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Registracija')"><span class="icon fa-user">Registracija</span></button></li>
+                            <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Povprasevanje')"><span class="icon fa-group">Povpraševanje</span></button> </li>
                             <li><button class="skel-layers-ignoreHref" onclick="odpriZavihek(event, 'Kontakt')"><span class="icon fa-envelope">Kontakt</span></li></button>
 						</nav>
 
@@ -299,7 +300,43 @@ include_once 'connect.php';
 </div>
 
 
+                <div id="Povprasevanje" class="tabcontent">
 
+
+                    <form class="contact-form" action="povprasevanje.php" method="post">
+
+                        <input type="text" name="name" placeholder="Ime in priimek">
+                        <br>
+                        <input type="text" name="mail" placeholder="Vaš e-mail naslov">
+                        <br>
+                        <input type="text" name="subject" placeholder="Zadeva">
+                        <br>
+                        <textarea name="message" rows="8" cols="80"></textarea>
+                        <br>
+
+                        Kategorija :
+                        <select name="kategorija">
+                            <option value="Elektroinštalacije">Elektroinštalacije</option>
+                            <option value="Kamnoseštvo">Kamnoseštvo</option>
+                            <option value="Računovodske storitve">Računovodske storitve</option>
+                            <option value="Informacijski inženiring">Informacijski inženiring</option>
+                            <option value="Lesarstvo">Lesarstvo</option>
+                            <option value="Dimnikarstvo">Dimnikarstvo</option>
+                            <option value="Avtomehanika">Avtomehanika</option>
+
+                        </select>
+                        <br></br>
+                        <button type="submit" name="submit">POŠLJI POVPRAŠEVANJE</button>
+                        <br></br>
+
+
+
+                    </form>
+
+
+
+
+                </div>
                 <!-- About Me -->
                 <div id="Registracija" class="tabcontent">
 
