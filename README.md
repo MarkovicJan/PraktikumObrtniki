@@ -48,7 +48,7 @@ Korak 2: Upravljanje strani/Vnos obrtnikov
 ```
 V primeru, da želimo dodati obrtnika, lahko ga enostavno vnesemo in vnos shranimo. Obrtnik je tako shranjen in viden vsem. 
 
-
+```
 
 Korak 3: Upravlanje strani/Iskanje obrtnikov
 
