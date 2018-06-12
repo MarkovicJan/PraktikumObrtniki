@@ -80,8 +80,13 @@ Iskanje obrtnikov je narejeno tako, da išče ključne besede iskalne vrstice. Z
 * **Damijan Vogrinec**
 
 
-## Bugs in izboljški
+## Bugs 
 
-* Izbris nepotrebnih datotek
-* Polepšanje strani
 * Še neznani
+
+
+## Task list
+
+- [x] Rešena večina funkcionalnosti :bulb:
+- [ ] Polepšanje izgleda projekta :sunflower:
+- [ ] Najdeni hrošči :bug::mag:
