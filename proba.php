@@ -1,5 +1,6 @@
 <?php
 include_once 'connect.php';
+include 'komentarji.php';
 ?>
 
 <!DOCTYPE HTML>
@@ -137,6 +138,21 @@ include_once 'connect.php';
                             <button class="tablinks" onclick="odpriZavihek(event, 'avtomehanika')">Avtomehanika</button>
                         </div>
                     </ul>
+					
+					<h2 style="color: red;">Komentiraj</h2>
+					
+					<?php
+echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";						
+?>
+
+					
+					
+					
             </section>
 
 
@@ -157,6 +173,13 @@ include_once 'connect.php';
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
+	
     ?>
 
 
@@ -181,6 +204,12 @@ include_once 'connect.php';
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -204,6 +233,12 @@ include_once 'connect.php';
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -227,6 +262,12 @@ include_once 'connect.php';
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -250,6 +291,12 @@ include_once 'connect.php';
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 </div>
@@ -271,6 +318,12 @@ include_once 'connect.php';
                 </div>";
             }
         }
+		echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -295,6 +348,12 @@ include_once 'connect.php';
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 </div>
