@@ -88,5 +88,5 @@ Iskanje obrtnikov je narejeno tako, da išče ključne besede iskalne vrstice. Z
 ## Task list
 
 - [x] Rešena večina funkcionalnosti :bulb:
-- [ ] Polepšanje izgleda projekta :sunflower:
+- [x] Polepšanje izgleda projekta :sunflower:
 - [ ] Najdeni hrošči :bug::mag:
