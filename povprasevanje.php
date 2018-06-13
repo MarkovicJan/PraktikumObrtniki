@@ -2,50 +2,30 @@
     include 'connect.php';
 
 
+    if (isset ($_POST['submit'])) {
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $mailFrom = $_POST['mail'];
+        $message = $_POST['message'];
 
+        $kategorija = $_POST['kategorija'];
 
-    if (isset ($_POST['submit'])){
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['mail'];
-    $message = $_POST['message'];
+        $headers = "From: " . $mailFrom;
+        $txt = "Prejeli ste sporočilo od: " . $mailFrom . ".\n\n" . $message;
 
-    $kategorija = $_POST['kategorija'];
+        //mail('damijan.vogrinec@gmail.com', $subject, $message,'From: testniobrtniki@gmail.com');
+       // mail('jan.markovic97@gmail.com','Sample mail','Sample content','From: testniobrtniki@gmail.com');
 
-    $headers = "From: ".$mailFrom;
-    $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+        $sql = "SELECT * FROM obrtniki where Kategorija='$kategorija'";
+        $result = mysqli_query($conn, $sql);
 
-    mail("damijanvogrinec@gmail.com", $subject, $message, $headers);
-
-    /*
-    $sql = "SELECT Kontakt FROM obrtniki where Kategorija=$kategorija";
-    $result = mysqli_query($conn, $sql);
-    $datas = array();
-    if (mysqli_num_rows($result) > 0){
-        while($row = mysqli_fetch_assoc($result)) {
-           // $datas[] = $row;
-            echo $row;
+        $resultCheck = mysqli_num_rows($result);
+        if (mysqli_num_rows($result) > 0){
+            while($row = mysqli_fetch_assoc($result)) {
+                mail($row["Kontakt"], $subject, $txt,'From: testniobrtniki@gmail.com');
+            }
         }
-    }*/
+        header('refresh:2; url=proba.php');
+    }
 
-   // foreach ($datas as $data){
-     //   mail($data, $subject, $txt, $headers);
-    //}
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-?>
+    ?>
