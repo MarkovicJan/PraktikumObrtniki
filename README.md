@@ -46,11 +46,11 @@ S pomočjo programa zaženite povezavo apache in mysql. Sedaj lahko zaženemo pr
 Korak 2: Upravljanje strani/Vnos obrtnikov
 
 ```
-V primeru, da želimo dodati obrtnika, lahko ga enostavno vnesemo in vnos shranimo. Obrtnik je tako shranjen in viden vsem. 
+V primeru, da želimo dodati obrtnika, ga lahko enostavno vnesemo in vnos shranimo. Obrtnik je tako shranjen in viden vsem. 
 
 ```
 
-Korak 3: Upravlanje strani/Iskanje obrtnikov
+Korak 3: Upravljanje strani/Iskanje obrtnikov
 
 ```
 Iskanje obrtnikov je narejeno tako, da išče ključne besede iskalne vrstice. Za bolj splošno iskanje lahko izberemo samo kategorijo obrtnika in nam tako pokaže vse obrtnike, ki so označene kategorije. 
