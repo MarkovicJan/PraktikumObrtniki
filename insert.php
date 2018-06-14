@@ -34,7 +34,7 @@ else
 }
 
 
-header('refresh:2; url=proba.php');
+header('refresh:2; url=Naj Obrtnik.php');
 
 ?>
 

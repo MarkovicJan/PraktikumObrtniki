@@ -1,5 +1,6 @@
 <?php
 include_once 'connect.php';
+include 'komentarji.php';
 ?>
 
 <!DOCTYPE HTML>
@@ -137,6 +138,19 @@ include_once 'connect.php';
                             <button class="tablinks" onclick="odpriZavihek(event, 'avtomehanika')">Avtomehanika</button>
                         </div>
                     </ul>
+					
+					<h2 style="color: red;">Komentiraj</h2>
+					
+					<?php
+echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";						
+?>
+					
+					
             </section>
 
 
@@ -154,12 +168,21 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
-                </div>";
+                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
+			   </div>";
         }
     }
+			
+	
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
-
-
+			
 
 </div>
 
@@ -178,9 +201,17 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
+				                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -201,9 +232,17 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
+				                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -224,9 +263,17 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
+				                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -247,9 +294,17 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
+				                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 </div>
@@ -268,9 +323,17 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
+				                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
                 </div>";
             }
         }
+		echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 
@@ -292,9 +355,17 @@ include_once 'connect.php';
                 <p>".$row['Opis']."</p>
                 <p>".$row['Kontakt']."</p>
                 <p>".$row['Lokacija']."</p>
+				                <iframe width='600' height='450' frameborder='0' style='border:0' src='https://maps.google.com/maps/embed/v1/place?q=".$row['Lokacija']."&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E' allowfullscreen></iframe>
+
                 </div>";
         }
     }
+	echo "<form method='POST' action='".setComments()."'>
+     <input type='hidden' name='uid' value='Anonymous'>          
+     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>    
+     <textarea name='besedilo'></textarea> <br>              
+	 <button type='submit' name='commentSubmit'>Komentiraj</button>						
+	 </form>";	
     ?>
 
 </div>
@@ -379,7 +450,8 @@ include_once 'connect.php';
                     <p> Kako do nas?</p>
 
                     <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EipLb3JvxaFrYSBjZXN0YSA0NiwgMjAwMCBNYXJpYm9yLCBTbG92ZW5pamE&key=AIzaSyA2ey47IlnUvYEHk6wmH4Yy1HG9DXFe83E" allowfullscreen></iframe>
-                    <p> Naš stalen naslov je navoljo na zgornjem zemljevidu.</p>
+                    
+					<p> Naš stalen naslov je navoljo na zgornjem zemljevidu.</p>
                     <br>
                     <b>Nahajamo se na naslovu Koroška cesta 46, 2000 Maribor.</b>
                     <br>
